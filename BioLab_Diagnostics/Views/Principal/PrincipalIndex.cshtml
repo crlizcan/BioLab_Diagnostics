@@ -1,0 +1,46 @@
+﻿
+
+@{
+    ViewData["Title"] = "Página principal";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+<div class="col-12 d-flex justify-content-around mt-3 mb-3" style="height:13vh; ">
+    <div class="mx-3 pb-2 pt-1 shadow d-grid align-items-center" style="text-align: center; border-radius:10px; width:21%; background-color: #e5f0ff;">
+        <div class="fw-bold text-dark fs-2 py-auto">@ViewData["BeneficiosTotales"] €</div>
+        <span class="fw-light text-secondary" style="font-size:12px;">BENEFICIOS TOTALES</span>
+    </div>
+    <div class="mx-3 pb-2 pt-1 shadow d-grid align-items-center" style="text-align: center; border-radius:10px; width:21%;">
+        <div class="fw-bold text-dark fs-2">@ViewData["PeticionesTotales"]</div>
+        <div class="fw-light text-secondary" style="font-size:12px;">PETICIONES TOTALES</div>
+    </div>
+    <div class="mx-3 pb-2 pt-1 shadow d-grid align-items-center" style="text-align: center; border-radius:10px; width:21%; ">
+        <div class="fw-bold text-dark fs-2">@ViewData["PeticionesAbiertas"]</div>
+        <div class="fw-light text-secondary" style="font-size:12px;">PETICIONES ABIERTAS</div>
+    </div>
+    <div class="mx-3 pb-2 pt-1 shadow d-grid align-items-center" style="text-align: center; border-radius:10px; width:21%; ">
+        <div class="fw-bold text-dark fs-2">@ViewData["numPacientes"]</div>
+        <div class="fw-light text-secondary" style="font-size:12px;">PACIENTES REGISTRADOS</div>
+    </div>
+</div>
+<div style="display:flex; justify-content: left;" class="m-2 mx-0">
+    <div style="width: 58%; height: 60vh;" class="p-2">
+        <canvas id="lineChart"></canvas>
+    </div>
+    <div style="width: 42%; height: 60vh;" class="p-2">
+        <canvas id="doughnutChart"></canvas>
+    </div>
+</div>
+
+
+
+<script>
+    var peticionesSolicitadas = @Html.Raw(Json.Serialize(ViewData["PeticionesSolicitadas"]));
+    var ultimos12Meses = @Html.Raw(Json.Serialize(ViewData["Ultimos12Meses"]));
+    var beneficios = @Html.Raw(Json.Serialize(ViewData["Beneficios"]));
+    var nombresPruebasMasSolicitadas = @Html.Raw(Json.Serialize(ViewData["NombresPruebasMasSolicitadas"]));
+    var cantPruebasMasSolicitadas = @Html.Raw(Json.Serialize(ViewData["CantPruebasMasSolicitadas"]));
+
+</script>
+
+

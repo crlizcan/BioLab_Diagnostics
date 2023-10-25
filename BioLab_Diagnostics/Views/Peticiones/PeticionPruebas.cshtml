@@ -1,0 +1,135 @@
+﻿@model IEnumerable<BioLab_Diagnostics.Models.Pruebas>
+
+@{
+	ViewData["Title"] = "Peticiones > Selección de pruebas";
+	Layout = "~/Views/Shared/_LayoutNoPadding.cshtml";
+}
+<div class="p-3 pt-0 pb-0">
+	<ul class="nav nav-tabs" style="margin-bottom: 1%;">
+		<li class="nav-item">
+			<a asp-area="" asp-controller="Peticiones" asp-action="PeticionCliente" class="nav-link disabled" aria-current="page">Paciente</a>
+		</li>
+		<li class="nav-item">
+			<a asp-area="" asp-controller="Peticiones" asp-action="PeticionPruebas" class="nav-link active" aria-current="page" style="font-weight:bold;">Pruebas</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link disabled" href="#" aria-disabled="true">Resultados</a>
+		</li>
+	</ul>
+</div>
+@using (Html.BeginForm("GuardarSeleccionados", "Peticiones", FormMethod.Post))
+{
+	<div class="p-3 pt-0 pb-2">
+		<table class="table" style="text-align: center;" id="table_seleccion_pruebas">
+			<thead>
+				<tr>
+					<th></th>
+					<th>
+						@Html.DisplayNameFor(model => model.Nombre)
+					</th>
+					<th>
+						@Html.DisplayNameFor(model => model.Descripcion)
+					</th>
+					<th>
+						@Html.DisplayNameFor(model => model.Precio)
+					</th>
+					<th>
+						Departamento
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var item in Model)
+				{
+					if (item.EsActivo == true)
+					{
+						<tr>
+							<td>
+							<input type="checkbox" class="checkbox-seleccion" data-id="@item.IdPrueba" />
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => item.Nombre)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => item.Descripcion)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => item.Precio)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => item.IdDepartamentoNavigation.Nombre)
+						</td>
+					</tr>
+					}
+				}
+			</tbody>
+		</table>
+	</div>
+	<div class="col-12 d-flex justify-content-end pe-2" style="border-top:1px solid lightgrey;">
+@* 		Nº Petición: @ViewData["idPeticion"] - Fecha visita: @ViewData["fechaVisita"] - @ViewData["nombreApellidosPaciente"] - Estado: @ViewData["estado"]
+ *@		@Html.Hidden("idPeticion", ViewData["idPeticion"])
+		<input type="hidden" name="idsSeleccionados" id="idsSeleccionados" />
+		<button type="submit" class="btn btn-primary me-1 mt-1 fw-bold " style="background-color:forestgreen;">Confirmar</button>
+		<a asp-action="Index" class="btn btn-light me-2 mt-1 " style="color:#0d6efd; border:1px solid #0d6efd;">Cancelar</a>
+	</div>
+}
+
+@section Scripts {
+	<script>
+		$(document).ready(function () {
+			$(".checkbox-seleccion").change(function () {
+				var idsSeleccionados = [];
+
+				$(".checkbox-seleccion:checked").each(function () {
+					idsSeleccionados.push($(this).data("id"));
+				});
+
+				$("#idsSeleccionados").val(idsSeleccionados.join(","));
+			});
+
+			$("#table_seleccion_pruebas").DataTable({
+				"language": {
+					"lengthMenu": "Mostrar _MENU_ registros",
+					"zeroRecords": "No se encontraron resultados",
+					"info": "Mostrando del _START_ al _END_ de un total de _TOTAL_ registros",
+					"infoEmpty": "Mostrando del 0 al 0 de un total de 0 registros",
+					"infoFiltered": "(filtrando de un total de _MAX_ registros)",
+					"sSearch": "Buscar:",
+					"oPaginate": {
+						"sFirst": "Primero",
+						"sLast": "Último",
+						"sNext": "Siguiente",
+						"sPrevious": "Anterior"
+					},
+					"sProcessing": "Procesando...",
+				}
+			});
+		});
+	</script>
+}
+
+@section Styles {
+	<style>
+		#table_seleccion_pruebas thead th {
+			background-color: #e2e2e2;
+			text-align: center;
+		}
+
+		.content-container.flex-column.flex-grow-1.p-3.rounded-bottom {
+			overflow: hidden !important;
+		}
+
+		.row.dt-row {
+			overflow-y: auto !important;
+			scrollbar-width: thin;
+			height: 44vh;
+			max-height: 200vh;
+			min-height: 30vh;
+			margin-bottom: 1%;
+		}
+
+		#table_seleccion_pruebas_info {
+			width: max-content;
+		}
+	</style>
+}

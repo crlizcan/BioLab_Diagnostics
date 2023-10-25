@@ -1,0 +1,142 @@
+﻿@model IEnumerable<BioLab_Diagnostics.Models.Clientes>
+
+@{
+	ViewData["Title"] = "Pacientes";
+	Layout = "~/Views/Shared/_LayoutDataTable.cshtml";
+}
+
+<table class="table table-hover" style="text-align: center;" id="table_id_pacientes">
+	<thead class="table-light">
+		<tr>
+			<th>
+				DNI
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Nombre)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Apellidos)
+			</th>
+			<th>
+				Fecha de nacimiento
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Sexo)
+			</th>
+			<th>
+				Teléfono
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Email)
+			</th>
+			<th>Opciones</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.Dni)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Nombre)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Apellidos)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.FechaNacimiento)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Sexo)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Telefono)
+				</td>
+				<td>
+					@Html.DisplayTextFor(modelItem => item.Email)
+				</td>
+				<td>
+					<a asp-action="Edit" asp-route-id="@item.Dni"><i class="bi bi-pencil-square"></i></a> @*|*@
+					<a asp-action="Details" asp-route-id="@item.Dni"><i class="bi bi-search"></i></a> @*|*@
+					@*<a asp-action="Delete" asp-route-id="@item.Dni"><i class="bi bi-x-square"></i></a>*@
+					<a href="#" class="pe-auto" data-bs-toggle="modal" data-bs-target="#exampleModal_@item.Dni">
+						<i class="bi bi-x-square"></i>
+					</a>
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModal_@item.Dni" tabindex="-1" aria-labelledby="exampleModalLabel_@item.Dni" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header ">
+									<i class="bi bi-exclamation-triangle" style="color:red; font-size:xxx-large; margin:0 auto;"></i>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-left:0; margin-bottom: 8%;"></button>
+								</div>
+								<div class="modal-body" style="text-align: center; font-size:large;">
+									<span class="fw-bold">¿Está seguro de que desea eliminar al paciente <span style="color:red;">"@item.Nombre @item.Apellidos"</span> con DNI <span style="color:red;">"@item.Dni"</span>?</span><br>
+									<span class="fw-light" style="font-size:small;">El paciente y sus datos asociados serán eliminados permanentemente</span><br>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+									<form asp-action="Delete" asp-route-id="@item.Dni" method="post">
+										<button type="submit" class="btn btn-danger">Eliminar</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
+@section Scripts {
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#table_id_pacientes").DataTable({
+				"language": {
+					"lengthMenu": "Mostrar _MENU_ registros",
+					"zeroRecords": "No se encontraron resultados",
+					"info": "Mostrando del _START_ al _END_ de un total de _TOTAL_ registros",
+					"infoEmpty": "Mostrando del 0 al 0 de un total de 0 registros",
+					"infoFiltered": "(filtrando de un total de _MAX_ registros)",
+					"sSearch": "Buscar:",
+					"oPaginate": {
+						"sFirst": "Primero",
+						"sLast": "Último",
+						"sNext": "Siguiente",
+						"sPrevious": "Anterior"
+					},
+					"sProcessing": "Procesando...",
+				}
+			});
+		});
+	</script>
+}
+
+@section Styles {
+	<style>
+		#table_id_pacientes thead th {
+			background-color: #e2e2e2;
+			text-align: center;
+		}
+
+		.content-container.flex-column.flex-grow-1.p-3.rounded-bottom {
+			overflow: hidden !important;
+		}
+
+		.row.dt-row {
+			overflow-y: auto !important;
+			scrollbar-width: thin;
+			height: 60vh;
+			max-height: 200vh;
+			min-height: 50vh;
+			margin-bottom: 1%;
+		}
+
+		#table_id_pacientes_info {
+			width: max-content;
+		}
+	</style>
+}

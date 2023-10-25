@@ -1,0 +1,172 @@
+﻿@model IEnumerable<BioLab_Diagnostics.Models.Peticiones>
+
+@{
+	ViewData["Title"] = "Peticiones";
+	Layout = "~/Views/Shared/_LayoutDataTable.cshtml";
+}
+
+<table class="table" style="text-align: center;" id="tabla_peticiones">
+	<thead>
+		<tr>
+			<th>
+				ID Petición
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.DniClienteNavigation.Nombre)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.DniClienteNavigation.Apellidos)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.DniClienteNavigation.Telefono)
+			</th>
+			<th>
+				Importe (€)
+			</th>
+			<th>
+				Fecha Visita
+			</th>
+			<th>
+				Fecha Informe
+			</th>
+			<th>
+				Estado
+			</th>
+			<th>
+				Opciones
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.IdPeticion)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.DniClienteNavigation.Nombre)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.DniClienteNavigation.Apellidos)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.DniClienteNavigation.Telefono)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Importe)
+				</td>
+				<td>
+					@{
+						var fechaVisita = item.FechaVisita.ToString("dd/MM/yyyy");
+						<text>@fechaVisita</text>
+					}
+				</td>
+				<td>
+					@if (item.FechaInforme.HasValue)
+					{
+						<text>@item.FechaInforme.Value.ToString("dd/MM/yyyy")</text>
+					}
+					else
+					{
+						<text>-</text>
+					}
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Estado)
+				</td>
+				<td class="col-4" style="width:5%;">
+					@{
+						var estado = item.Estado;
+						if(item.Estado.Equals("S. PRUEBAS"))
+						{
+							<a asp-action="PeticionPruebas" asp-route-id="@item.IdPeticion" asp-route-idPeticion="@item.IdPeticion"><i class="bi bi-pencil-square"></i></a>
+						}
+						else if (item.Estado.Equals("PROCESANDO") || item.Estado.Equals("COMPLETADO") || item.Estado.Equals("ENVIADO"))
+						{
+							<a asp-action="PeticionResultados" asp-route-id="@item.IdPeticion"><i class="bi bi-pencil-square"></i></a>
+						}
+					}
+					@* <a asp-action="PeticionResultados" asp-route-id="@item.IdPeticion"><i class="bi bi-pencil-square"></i></a> *@
+					<a asp-action="Details" asp-route-id="@item.IdPeticion"><i class="bi bi-search"></i></a>
+					<a href="#" class="pe-auto" data-bs-toggle="modal" data-bs-target="#Modal_@item.IdPeticion">
+						<i class="bi bi-x-square"></i>
+					</a>
+					<!-- Modal -->
+					<div class="modal fade" id="Modal_@item.IdPeticion" tabindex="-1" aria-labelledby="eModalLabel_@item.IdPeticion" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header ">
+									<i class="bi bi-exclamation-triangle" style="color:red; font-size:xxx-large; margin:0 auto;"></i>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-left:0; margin-bottom: 8%;"></button>
+								</div>
+								<div class="modal-body" style="text-align: center; font-size:large;">
+									<span class="fw-bold">¿Está seguro de que desea eliminar la petición <span style="color:red;">"@item.IdPeticion"</span>?</span><br>
+									<span class="fw-light" style="font-size:small;">La petición y sus datos asociados serán eliminados permanentemente</span><br>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+									<form asp-action="Delete" asp-route-id="@item.IdPeticion" method="post">
+										<button type="submit" class="btn btn-danger">Eliminar</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
+@section Scripts {
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#tabla_peticiones").DataTable({
+				"language": {
+					"lengthMenu": "Mostrar _MENU_ registros",
+					"zeroRecords": "No se encontraron resultados",
+					"info": "Mostrando del _START_ al _END_ de un total de _TOTAL_ registros",
+					"infoEmpty": "Mostrando del 0 al 0 de un total de 0 registros",
+					"infoFiltered": "(filtrando de un total de _MAX_ registros)",
+					"sSearch": "Buscar:",
+					"oPaginate": {
+						"sFirst": "Primero",
+						"sLast": "Último",
+						"sNext": "Siguiente",
+						"sPrevious": "Anterior"
+					},
+					"sProcessing": "Procesando...",
+				},
+				"order": [[0, "desc"]] //Ordena la tabla por la primera columna (ID Petición) de forma descendente
+			});
+		});
+	</script>
+}
+
+@* Sección de estilos personalizados para la DataTable *@
+@section Styles {
+	<style>
+		#tabla_peticiones thead th {
+			background-color: #e2e2e2;
+			text-align: center;
+		}
+
+		.content-container.flex-column.flex-grow-1.p-3.rounded-bottom {
+			overflow: hidden !important;
+		}
+
+		.row.dt-row {
+			overflow-y: auto !important;
+			scrollbar-width: thin;
+			height: 60vh;
+			max-height: 200vh;
+			min-height: 50vh;
+			margin-bottom: 1%;
+		}
+
+		#tabla_peticiones_info {
+			width: max-content;
+		}
+	</style>
+}
