@@ -1,0 +1,167 @@
+﻿@model IEnumerable<BioLab_Diagnostics.Models.Pruebas>
+
+@{
+	ViewData["Title"] = "Pruebas";
+	Layout = "~/Views/Shared/_LayoutDataTable.cshtml";
+}
+
+<table class="table table-hover" style="text-align: center;" id="table_id_pruebas">
+	<thead>
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.Nombre)
+			</th>
+			<th>
+				Departamento
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Precio)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Descripcion)
+			</th>
+			<th>
+				Valor de referencia
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Unidades)
+			</th>
+			<th class="col-4" style="width:5%;">Opciones</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			if (item.EsActivo == true)
+			{
+				<tr>
+					<td>
+						@Html.DisplayFor(modelItem => item.Nombre)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.IdDepartamentoNavigation.Nombre)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.Precio)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.Descripcion)
+					</td>
+					<td>
+						@{
+							var valoresReferencia = item.ValoresReferencia;
+							if (valoresReferencia != null && valoresReferencia.Count > 0)
+							{
+								foreach (var v in valoresReferencia)
+								{
+									if (v.Sexo == null)
+									{
+										<text>@v.ValorReferencia</text>
+									}
+									else
+									{
+										<text>@v.Sexo: @v.ValorReferencia</text>
+									}
+									<br />
+								}
+							}
+							else
+							{
+								<text>No hay valores de referencia</text>
+							}
+						}
+					</td>
+					<td>
+						@if(item.Unidades != null)
+						{
+							@Html.DisplayFor(modelItem => item.Unidades)
+						} else
+						{
+							<text>-</text>
+						}
+
+					</td>
+
+					<td class="col-4" style="width:5%;">
+						<a asp-action="Edit" asp-route-id="@item.IdPrueba"><i class="bi bi-pencil-square"></i></a>
+						<a asp-action="Details" asp-route-id="@item.IdPrueba"><i class="bi bi-search"></i></a>
+						<a href="#" class="pe-auto" data-bs-toggle="modal" data-bs-target="#exampleModal_@item.IdPrueba">
+							<i class="bi bi-x-square"></i>
+						</a>
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal_@item.IdPrueba" tabindex="-1" aria-labelledby="exampleModalLabel_@item.IdPrueba" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header ">
+										<i class="bi bi-exclamation-triangle" style="color:red; font-size:xxx-large; margin:0 auto;"></i>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-left:0; margin-bottom: 8%;"></button>
+									</div>
+									<div class="modal-body" style="text-align: center; font-size:large;">
+										<span class="fw-bold">¿Está seguro de que desea eliminar la prueba <span style="color:red;">"@item.Nombre"</span>?</span><br>
+										<span class="fw-light" style="font-size:small;">La prueba y sus datos asociados serán eliminados permanentemente</span><br>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+										<form asp-controller="Pruebas" asp-action="Delete" asp-route-id="@item.IdPrueba" method="post">
+											<button type="submit" class="btn btn-danger">Eliminar</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+			}
+		}
+	</tbody>
+</table>
+
+@section Scripts {
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#table_id_pruebas").DataTable({
+				"language": {
+					"lengthMenu": "Mostrar _MENU_ registros",
+					"zeroRecords": "No se encontraron resultados",
+					"info": "Mostrando del _START_ al _END_ de un total de _TOTAL_ registros",
+					"infoEmpty": "Mostrando del 0 al 0 de un total de 0 registros",
+					"infoFiltered": "(filtrando de un total de _MAX_ registros)",
+					"sSearch": "Buscar:",
+					"oPaginate": {
+						"sFirst": "Primero",
+						"sLast": "Último",
+						"sNext": "Siguiente",
+						"sPrevious": "Anterior"
+					},
+					"sProcessing": "Procesando...",
+				}
+			});
+		});
+	</script>
+}
+
+@* Sección de estilos personalizados para la DataTable *@
+@*Los estilos aplicados directamente con CSS no funcionan debido a que DataTables aplica su propio estilo a la tabla, que tiene prioridad.
+Utilizando una sección Styles se asegura que los estilos personalizados se apliquen después de que DataTables haya hecho sus cambios. De esta forma, se evitan conflictos y se logra que los estilos personalizados tengan prioridad sobre los estilos de DataTables.*@
+@section Styles {
+	<style>
+		#table_id_pruebas thead th {
+			background-color: #e2e2e2;
+			text-align: center;
+		}
+		.content-container.flex-column.flex-grow-1.p-3.rounded-bottom {
+			overflow: hidden !important;
+		}
+		.row.dt-row {
+			overflow-y: auto !important;
+			scrollbar-width: thin;
+			height: 60vh;
+			max-height: 200vh;
+			min-height: 50vh;
+			margin-bottom: 1%;
+		}
+		#table_id_pruebas_info {
+			width: max-content;
+		}
+	</style>
+}

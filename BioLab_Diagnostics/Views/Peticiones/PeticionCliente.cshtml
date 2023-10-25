@@ -1,0 +1,80 @@
+﻿@model BioLab_Diagnostics.Models.Clientes
+
+@{
+    ViewData["Title"] = "Peticiones > Asociar paciente";
+    Layout = "~/Views/Shared/_LayoutOverflow.cshtml";
+}
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a asp-area="" asp-controller="Peticiones" asp-action="PeticionCliente" class="nav-link active" aria-current="page" style="font-weight:bold;">Paciente</a>
+    </li>
+    <li class="nav-item">
+        <a asp-area="" asp-controller="Peticiones" asp-action="PeticionPruebas" class="nav-link disabled" aria-current="page">Pruebas</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Resultados</a>
+    </li>
+</ul>
+<link rel="stylesheet" href="~/css/site.css" />
+<div class="container" style="padding:2%; padding-left:4%;">
+    <div class="row">
+        <div class="col-md-12">
+            <form asp-action="Create" asp-controller="Peticiones" class="row g-3">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="col-md-6 fw-light text-secondary" style="width:45%; margin-right:7%;" method="post">
+                    <label asp-for="Dni" class="form-label">DNI</label>
+                    <div class="input-group">
+                        <input asp-for="Dni" class="form-control" />
+                        <button class="btn btn-outline-secondary" type="submit" asp-controller="Peticiones" asp-action="BuscarDniPaciente">Buscar</button>
+                    </div>
+                    <span asp-validation-for="Dni" class="text-danger"></span>
+                </div>
+                
+                <div class="col-md-6 fw-light text-secondary" style="width:45%;">
+                    <label asp-for="Nombre" class="form-label"></label>
+                    <input asp-for="Nombre" class="form-control" />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 fw-light text-secondary" style="width:45%; margin-right:7%;">
+                    <label asp-for="Apellidos" class="form-label"></label>
+                    <input asp-for="Apellidos" class="form-control" />
+                    <span asp-validation-for="Apellidos" class="text-danger"></span>
+                </div>
+
+                <div class="col-md-6 fw-light text-secondary" style="width:45%;">
+                    <label asp-for="FechaNacimiento" class="form-label">Fecha de nacimiento</label>
+                    <input asp-for="FechaNacimiento" class="form-control" />
+                    <span asp-validation-for="FechaNacimiento" class="text-danger"></span>
+                </div>
+
+                <div class="col-md-6 fw-light text-secondary" style="width:45%; margin-right:7%;">
+                    <label asp-for="Sexo" class="form-label"></label>
+                    <select asp-for="Sexo" class="form-select">
+                        <option value="M">Mujer</option>
+                        <option value="H">Hombre</option>
+                    </select>
+                    <span asp-validation-for="Sexo" class="text-danger"></span>
+                </div>
+
+                <div class="col-md-6 fw-light text-secondary" style="width:45%;">
+                    <label asp-for="Telefono" class="form-label">Teléfono</label>
+                    <input asp-for="Telefono" class="form-control" />
+                    <span asp-validation-for="Telefono" class="text-danger"></span>
+                </div>
+
+                <div class="col-md-6 fw-light text-secondary" style="width:45%; margin-right:7%;">
+                    <label asp-for="Email" class="form-label">Correo electrónico</label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="col-12 d-flex justify-content-end pe-4 mt-0">
+                    <button type="submit" class="btn btn-primary me-1 mt-1 fw-bold " style="background-color:forestgreen;">Guardar y continuar</button>
+                    <a asp-action="Index" class="btn btn-light me-2 mt-1 " style="color:#0d6efd; border:1px solid #0d6efd;">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+

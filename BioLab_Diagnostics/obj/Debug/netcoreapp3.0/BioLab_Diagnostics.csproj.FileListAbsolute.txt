@@ -1,0 +1,423 @@
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\BioLab_Diagnostics.StaticWebAssets.xml
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\BioLab_Diagnostics.exe
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\BioLab_Diagnostics.deps.json
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\BioLab_Diagnostics.runtimeconfig.json
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\BioLab_Diagnostics.runtimeconfig.dev.json
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\BioLab_Diagnostics.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\BioLab_Diagnostics.pdb
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\BioLab_Diagnostics.Views.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\BioLab_Diagnostics.Views.pdb
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Bcl.HashCode.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Data.SqlClient.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Identity.Client.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\dotnet-aspnet-codegenerator-design.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\NuGet.Frameworks.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\System.Collections.Immutable.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\System.ComponentModel.Annotations.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\System.Composition.AttributedModel.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\System.Composition.Convention.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\System.Composition.Hosting.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\System.Composition.Runtime.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\System.Composition.TypedParts.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\System.Configuration.ConfigurationManager.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\System.Runtime.Caching.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\sni.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\sni.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\sni.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.csproj.AssemblyReference.cache
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.AssemblyInfoInputs.cache
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.AssemblyInfo.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.csproj.CoreCompileInputs.cache
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.RazorAssemblyInfo.cache
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.RazorAssemblyInfo.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\staticwebassets\BioLab_Diagnostics.StaticWebAssets.Manifest.cache
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\staticwebassets\BioLab_Diagnostics.StaticWebAssets.Pack.cache
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\staticwebassets\msbuild.BioLab_Diagnostics.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\staticwebassets\msbuild.build.BioLab_Diagnostics.props
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\staticwebassets\msbuild.buildMultiTargeting.BioLab_Diagnostics.props
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\staticwebassets\msbuild.buildTransitive.BioLab_Diagnostics.props
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\staticwebassets\BioLab_Diagnostics.StaticWebAssets.xml
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.TagHelpers.input.cache
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.TagHelpers.output.cache
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.RazorCoreGenerate.cache
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ForgotPassword.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.RazorTargetAssemblyInfo.cache
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.RazorTargetAssemblyInfo.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.Views.pdb
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.csproj.CopyComplete
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.pdb
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.genruntimeconfig.cache
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Principal\PrincipalIndex.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Mensajeria\MensajeriaIndex.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\PersonalData.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Clientes\Create.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Clientes\Delete.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Clientes\Details.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Clientes\Edit.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Clientes\Index.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\NodaTime.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Pruebas\Create.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Pruebas\Details.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Pruebas\Edit.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Pruebas\Index.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Departamentos\Create.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Departamentos\Delete.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Departamentos\Details.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Departamentos\Edit.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Departamentos\Index.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Peticiones\Create.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Peticiones\Delete.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Peticiones\Details.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Peticiones\Edit.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Peticiones\Index.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Peticiones\PeticionPruebas.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Peticiones\PeticionCliente.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ResetPassword.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ForgotPasswordConfirmation.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ResetPasswordConfirmation.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Peticiones\PeticionResultados.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_LayoutNoPadding.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\BioLab_Diagnostics.StaticWebAssets.xml
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\BioLab_Diagnostics.exe
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\BioLab_Diagnostics.deps.json
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\BioLab_Diagnostics.runtimeconfig.json
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\BioLab_Diagnostics.runtimeconfig.dev.json
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\BioLab_Diagnostics.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\BioLab_Diagnostics.pdb
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\BioLab_Diagnostics.Views.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\BioLab_Diagnostics.Views.pdb
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Bcl.HashCode.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Data.SqlClient.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Identity.Client.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\dotnet-aspnet-codegenerator-design.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\NodaTime.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\NuGet.Frameworks.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\System.Collections.Immutable.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\System.ComponentModel.Annotations.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\System.Composition.AttributedModel.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\System.Composition.Convention.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\System.Composition.Hosting.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\System.Composition.Runtime.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\System.Composition.TypedParts.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\System.Configuration.ConfigurationManager.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\System.Runtime.Caching.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\sni.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\sni.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\sni.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.csproj.AssemblyReference.cache
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.AssemblyInfoInputs.cache
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.AssemblyInfo.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.csproj.CoreCompileInputs.cache
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.RazorAssemblyInfo.cache
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.RazorAssemblyInfo.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\staticwebassets\BioLab_Diagnostics.StaticWebAssets.Manifest.cache
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\staticwebassets\BioLab_Diagnostics.StaticWebAssets.Pack.cache
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\staticwebassets\msbuild.BioLab_Diagnostics.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\staticwebassets\msbuild.build.BioLab_Diagnostics.props
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\staticwebassets\msbuild.buildMultiTargeting.BioLab_Diagnostics.props
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\staticwebassets\msbuild.buildTransitive.BioLab_Diagnostics.props
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\staticwebassets\BioLab_Diagnostics.StaticWebAssets.xml
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.TagHelpers.input.cache
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.TagHelpers.output.cache
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.RazorCoreGenerate.cache
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ForgotPassword.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ForgotPasswordConfirmation.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\PersonalData.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ResetPassword.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ResetPasswordConfirmation.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Clientes\Create.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Clientes\Delete.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Clientes\Details.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Clientes\Edit.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Clientes\Index.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Departamentos\Create.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Departamentos\Delete.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Departamentos\Details.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Departamentos\Edit.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Departamentos\Index.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Mensajeria\MensajeriaIndex.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Peticiones\Create.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Peticiones\Delete.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Peticiones\Details.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Peticiones\Edit.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Peticiones\Index.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Peticiones\PeticionCliente.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Peticiones\PeticionPruebas.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Peticiones\PeticionResultados.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Principal\PrincipalIndex.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Pruebas\Create.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Pruebas\Delete.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Pruebas\Details.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Pruebas\Edit.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Pruebas\Index.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_LayoutNoPadding.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.RazorTargetAssemblyInfo.cache
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.RazorTargetAssemblyInfo.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.Views.pdb
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.csproj.CopyComplete
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.pdb
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\Copias de seguridad\11-08-2023 Copia de seguridad\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\BioLab_Diagnostics.genruntimeconfig.cache
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\bin\Debug\netcoreapp3.0\Rotativa.AspNetCore.dll
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\CrearPDF\Index.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Peticiones\EditarResultados.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_LayoutOverflow.cshtml.g.cs
+C:\Users\crist\OneDrive\Escritorio\Proyectos ASP.NET Core\BioLab_Diagnostics\BioLab_Diagnostics\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_LayoutDataTable.cshtml.g.cs

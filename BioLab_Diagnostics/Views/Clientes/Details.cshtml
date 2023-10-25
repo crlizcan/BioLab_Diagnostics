@@ -1,0 +1,72 @@
+﻿@model BioLab_Diagnostics.Models.Clientes
+
+@{
+    ViewData["Title"] = "Detalles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var peticiones = Model.Peticiones.Where(p => p.Estado.Equals("ENVIADO")).OrderByDescending(p => p.IdPeticion).ToList();
+}
+
+<div class="row">
+    <div class="col-12 mb-2" style="display:flex; align-items: center;">
+        <div style="width: 10%;  margin-right: 2%; display:flex; align-items: center; background-color: #d1e2ff; border-radius: 6px; justify-content: center; height: 100%;">
+            <i class="bi bi-person-fill" style="font-size: xxx-large; justify-content: center; display: flex;"></i>
+        </div>
+        <div style="width:90%; text-align: left;">
+            <div class="fw-bold" style="font-size: x-large;">
+                @Html.DisplayFor(model => model.Nombre) @Html.DisplayFor(model => model.Apellidos)
+            </div>
+            <div style="color: #5b5b5b; font-weight:bold;">
+                @Html.DisplayFor(model => model.Dni)
+            </div>
+            <div style="color:#5b5b5b; font-weight:lighter; display: flex; align-items: center;">
+                @Html.DisplayFor(model => model.Sexo) <i class="bi bi-circle-fill mx-2" style="font-size:4px;"></i>
+                @Html.DisplayFor(model => model.FechaNacimiento) <i class="bi bi-circle-fill mx-2" style="font-size:4px;"></i>
+                @Html.DisplayFor(model => model.Telefono) <i class="bi bi-circle-fill mx-2" style="font-size:4px;"></i>
+               @Html.DisplayTextFor(model => model.Email)
+            </div>
+        </div>
+
+
+        
+    </div>
+    <h4 class="text-center fw-bold" style="margin-top: 1%;">Informes</h4>
+    
+    <div class="col-12" style="min-height: 42vh;  overflow-y: auto; scrollbar-width: thin; margin-bottom: 1%;">
+        <ul class="list-group" style="text-align: center;">
+            <li class="list-group-item list-group-item-action" style="background-color: #c1cad7; font-weight: bold;">
+                <div class="row">
+                    <div class="col">ID Petición</div>
+                    <div class="col">Fecha Visita</div>
+                    <div class="col">Fecha Informe</div>
+                    <div class="col">Importe</div>
+                    <div class="col">Estado</div>
+                </div>
+            </li>
+            @if (peticiones.Count() == 0)
+            {
+                <li class="list-group-item list-group-item-action">No hay elementos para mostrar</li>
+            }
+            else
+            {
+                @foreach (var item in peticiones)
+                {
+                        <a asp-area="" asp-controller="CrearPDF" asp-action="GenerarPDF" asp-route-idPeticion="@item.IdPeticion" target="_blank" style="text-decoration:none;">
+                            <li class="list-group-item list-group-item-action">
+                                <div class="row">
+                                    <div class="col">@item.IdPeticion</div>
+                                    <div class="col">@item.FechaVisita.ToString("dd/MM/yyyy")</div>
+                                    <div class="col">@item.FechaInforme.Value.ToString("dd/MM/yyyy")</div>
+                                    <div class="col">@item.Importe</div>
+                                    <div class="col">@item.Estado</div>
+                                </div>
+                            </li>
+                        </a>              
+                }
+            }
+        </ul>
+    </div>
+    <div class="col-12 d-flex justify-content-end pe-4">
+        <a asp-action="Index" class="btn btn-light me-2 mt-2 " style="color:#0d6efd; border:1px solid #0d6efd;">Atrás</a>
+    </div>
+</div>
+

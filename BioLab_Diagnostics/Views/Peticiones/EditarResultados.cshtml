@@ -1,0 +1,201 @@
+﻿@using Microsoft.EntityFrameworkCore.Internal;
+@model IEnumerable<BioLab_Diagnostics.Models.PeticionesPruebas>
+
+@{
+    ViewData["Title"] = "Peticiones > Editar resultados";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var modelo = Model.ToList();
+    var id = Model.First().IdPeticion;
+}
+
+<div class="p-3 pt-0 pb-0">
+    <ul class="nav nav-tabs" style="margin-bottom: 1%;">
+        <li class="nav-item">
+            <a asp-area="" asp-controller="Peticiones" asp-action="PeticionCliente" class="nav-link disabled" aria-disabled="true">Paciente</a>
+        </li>
+        <li class="nav-item">
+            <a asp-area="" asp-controller="Peticiones" asp-action="PeticionPruebas" class="nav-link disabled" aria-disabled="true">Pruebas</a>
+        </li>
+        <li class="nav-item">
+            <a asp-area="" asp-controller="Peticiones" asp-action="PeticionResultados" class="nav-link active" aria-current="page">Resultados</a>
+        </li>
+        @if (ViewData["Estado"].Equals("COMPLETADO") || ViewData["Estado"].Equals("VALIDADO") || ViewData["Estado"].Equals("ENVIADO"))
+        {
+            <li class="nav-item">
+@*                 <a asp-area="" asp-controller="Peticiones" asp-action="PeticionAuditoria" class="nav-link active" aria-current="page" asp-route-id="@id">Auditor</a>
+ *@            </li>
+        }
+        else if (ViewData["Estado"].Equals("S. PRUEBAS") || ViewData["Estado"].Equals("PROCESANDO"))
+        {
+            <li class="nav-item">
+                <a asp-area="" asp-controller="Peticiones" asp-action="PeticionAuditoria" class="nav-link disabled" aria-current="page">Auditor</a>
+            </li>
+        }
+    </ul>
+</div>
+@using (Html.BeginForm("EditarResultados", "Peticiones", FormMethod.Post))
+{
+@* <div class="row">
+    <div class="col-md-4">
+        <form asp-action="EditarResultados">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdPeticionPrueba" />
+            <div class="form-group">
+                <label asp-for="IdPeticion" class="control-label"></label>
+                <select asp-for="IdPeticion" class="form-control" asp-items="ViewBag.IdPeticion"></select>
+                <span asp-validation-for="IdPeticion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdPrueba" class="control-label"></label>
+                <select asp-for="IdPrueba" class="form-control" asp-items="ViewBag.IdPrueba"></select>
+                <span asp-validation-for="IdPrueba" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Resultado" class="control-label"></label>
+                <input asp-for="Resultado" class="form-control" />
+                <span asp-validation-for="Resultado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div> *@
+
+	<div class="p-3 pt-0 pb-2">
+		<table class="table" style="text-align: center;" id="tabla_editar_resultados">
+			<thead>
+				<tr>
+					<th>
+						@Html.DisplayNameFor(model => model.IdPruebaNavigation.Nombre)
+					</th>
+					<th>
+						Departamento
+					</th>
+					<th>
+						Valor de referencia
+					</th>
+					<th>
+						Resultado
+					</th>
+					<th>
+						Unidades
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+
+				@foreach (var item in Model)
+				{
+					<tr>
+						<td>
+							@Html.DisplayFor(modelItem => item.IdPruebaNavigation.Nombre)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => item.IdPruebaNavigation.IdDepartamentoNavigation.Nombre)
+						</td>
+						<td>
+							@{
+								foreach (var i in item.IdPruebaNavigation.ValoresReferencia)
+								{
+									//Muestro el valor de referencia. Si depende del sexo, muestro únicamente aquel valor que corresponda con el sexo del paciente
+									if (i.Sexo == null)
+									{
+										<text>@i.ValorReferencia</text>
+									}
+									else
+									{
+										if (i.Sexo.Equals(item.IdPeticionNavigation.DniClienteNavigation.Sexo))
+										{
+											<text>@i.ValorReferencia</text>
+										}
+									}
+								}
+							}
+						</td>
+						<td>
+							<input type="hidden" asp-for="@item.IdPeticionPrueba" name="peticionesPruebas[@Model.IndexOf(item)].IdPeticionPrueba" value="@item.IdPeticionPrueba" />
+							<input type="hidden" asp-for="@item.IdPrueba" name="peticionesPruebas[@Model.IndexOf(item)].IdPrueba" value="@item.IdPrueba" />
+							<input type="hidden" asp-for="@item.IdPeticion" name="peticionesPruebas[@Model.IndexOf(item)].IdPeticion" value="@item.IdPeticion" />
+							<div class="form-group">
+								<input asp-for="@item.Resultado" name="peticionesPruebas[@Model.IndexOf(item)].Resultado" class="form-control" />
+							</div>
+						</td>
+						<td>
+							@{
+								if (item.IdPruebaNavigation.Unidades == null)
+								{
+									<text>-</text>
+								}
+								else
+								{
+									<text>@item.IdPruebaNavigation.Unidades</text>
+								}
+							}
+						</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+	<div class="col-12 d-flex justify-content-end pe-2" style="border-top:1px solid lightgrey;">
+		<div class="fw-light ps-3 pt-3">
+			Nº Petición: @ViewData["NPeticion"] - Fecha Visita: @ViewData["FechaVisita"] - @ViewData["NombreCompleto"] - Estado: @ViewData["Estado"]
+		</div>
+		<div class="ms-auto pt-2">
+			<button type="submit" class="btn btn-primary me-1 mt-1 fw-bold " style="background-color:forestgreen;">Guardar</button>
+			<a asp-area="" asp-controller="Peticiones" asp-action="PeticionResultados" asp-route-id="@id" class="btn btn-light me-2 mt-1 " style="color:#0d6efd; border:1px solid #0d6efd;">Cancelar</a>
+		</div>
+	</div>
+}
+
+
+@section Scripts {
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#tabla_editar_resultados").DataTable({
+				"language": {
+					"lengthMenu": "Mostrar _MENU_ registros",
+					"zeroRecords": "No se encontraron resultados",
+					"info": "Mostrando del _START_ al _END_ de un total de _TOTAL_ registros",
+					"infoEmpty": "Mostrando del 0 al 0 de un total de 0 registros",
+					"infoFiltered": "(filtrando de un total de _MAX_ registros)",
+					"sSearch": "Buscar:",
+					"oPaginate": {
+						"sFirst": "Primero",
+						"sLast": "Último",
+						"sNext": "Siguiente",
+						"sPrevious": "Anterior"
+					},
+					"sProcessing": "Procesando...",
+				}
+			});
+		});
+	</script>
+}
+
+@section Styles {
+	<style>
+		#tabla_editar_resultados thead th {
+			background-color: #e2e2e2;
+			text-align: center;
+		}
+
+		.content-container.flex-column.flex-grow-1.p-3.rounded-bottom {
+			overflow: hidden !important;
+		}
+
+		.row.dt-row {
+			overflow-y: auto !important;
+			scrollbar-width: thin;
+			height: 42vh;
+			max-height: 200vh;
+			min-height: 20vh;
+			margin-bottom: 1%;
+		}
+
+		#tabla_editar_resultados_info {
+			width: max-content;
+		}
+	</style>
+}

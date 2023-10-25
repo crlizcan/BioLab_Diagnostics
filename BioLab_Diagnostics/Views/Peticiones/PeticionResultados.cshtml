@@ -1,0 +1,292 @@
+﻿@using System.Text.RegularExpressions;
+@using Microsoft.EntityFrameworkCore.Internal;
+@using System.Globalization;
+@model IEnumerable<BioLab_Diagnostics.Models.PeticionesPruebas>
+
+@{
+	ViewData["Title"] = "Peticiones > Añadir resultados";
+	Layout = "~/Views/Shared/_LayoutNoPadding.cshtml";
+	var modelo = Model.ToList();
+	var id = Model.First().IdPeticion;
+}
+
+<div class="p-3 pt-0 pb-0">
+	<ul class="nav nav-tabs" style="margin-bottom: 1%;">
+		<li class="nav-item">
+			<a asp-area="" asp-controller="Peticiones" asp-action="PeticionCliente" class="nav-link disabled" aria-disabled="true">Paciente</a>
+		</li>
+		<li class="nav-item">
+			<a asp-area="" asp-controller="Peticiones" asp-action="PeticionPruebas" class="nav-link disabled" aria-disabled="true">Pruebas</a>
+		</li>
+		<li class="nav-item">
+			<a asp-area="" asp-controller="Peticiones" asp-action="PeticionResultados" class="nav-link active custom-nav-link" aria-current="page" style="font-weight:bold;">Resultados</a>
+		</li>
+	</ul>
+</div>
+@using (Html.BeginForm("GuardarResultados", "Peticiones", FormMethod.Post))
+{
+	<div class="p-3 pt-0 pb-2">
+		<table class="table" style="text-align: center;" id="tabla_resultados">
+			<thead>
+				<tr>
+					<th>
+						@Html.DisplayNameFor(model => model.IdPruebaNavigation.Nombre)
+					</th>
+					<th>
+						Departamento
+					</th>
+					<th>
+						Valor de referencia
+					</th>
+					<th>
+						Resultado
+					</th>
+					<th>
+						Unidades
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+
+				@foreach (var item in Model)
+				{
+					<tr>
+						<td>
+							@Html.DisplayFor(modelItem => item.IdPruebaNavigation.Nombre)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => item.IdPruebaNavigation.IdDepartamentoNavigation.Nombre)
+						</td>
+						<td>
+							@{
+								foreach (var i in item.IdPruebaNavigation.ValoresReferencia)
+								{
+									//Muestro el valor de referencia. Si depende del sexo, muestro únicamente aquel valor que corresponda con el sexo del paciente
+									if (i.Sexo == null)
+									{
+										<text>@i.ValorReferencia</text>
+									}
+									else
+									{
+										if (i.Sexo.Equals(item.IdPeticionNavigation.DniClienteNavigation.Sexo))
+										{
+											<text>@i.ValorReferencia</text>
+										}
+									}
+								}
+							}
+						</td>
+						<td>
+							<input type="hidden" asp-for="@item.IdPeticionPrueba" name="peticionesPruebas[@Model.IndexOf(item)].IdPeticionPrueba" value="@item.IdPeticionPrueba" />
+							<input type="hidden" asp-for="@item.IdPrueba" name="peticionesPruebas[@Model.IndexOf(item)].IdPrueba" value="@item.IdPrueba" />
+							<input type="hidden" asp-for="@item.IdPeticion" name="peticionesPruebas[@Model.IndexOf(item)].IdPeticion" value="@item.IdPeticion" />
+							@*Si la prueba ya tiene un resultado, aparece su valor. Si no, aparece un formulario para asignarle un valor.*@
+							@if (item.Resultado != null)
+							{
+								<input type="hidden" asp-for="@item.Resultado" name="peticionesPruebas[@Model.IndexOf(item)].Resultado" value="@item.Resultado" />
+								//Los resultados anormales (fuera del valor de referencia) aparecerán resaltados en color rojo, los normales, en color verde.
+								//Compruebo si el valor de referencia de la prueba es independiente del sexo del paciente, o por el contario, depende del mismo. Si depende del sexo, se mostrará únicamente aquel valor de referencia que coincida con el sexo del paciente.
+								var valorReferencia = "";
+
+								foreach (var i in item.IdPruebaNavigation.ValoresReferencia)
+								{
+									//Si no depende del sexo, guardo el valor de referencia para mostrarlo
+									if (i.Sexo == null)
+									{
+										valorReferencia = i.ValorReferencia;
+									}
+									else
+									{
+										//Si depende del sexo, guardo el valor de referencia correspondiente al sexo del paciente
+										if (i.Sexo.Equals(item.IdPeticionNavigation.DniClienteNavigation.Sexo))
+										{
+											valorReferencia = i.ValorReferencia;
+										}
+									}
+								}
+								//Compruebo de qué tipo de operación es el valor de referencia (intervalo, mayor qué, etc)
+								if (valorReferencia.Contains("-"))
+								{
+									var intervalo = valorReferencia.Split("-");
+									double limiteInferior = double.Parse(intervalo[0], CultureInfo.InvariantCulture);
+									double limiteSuperior = double.Parse(intervalo[1], CultureInfo.InvariantCulture);
+									double resultado = double.Parse(item.Resultado, CultureInfo.InvariantCulture);
+
+									if (resultado >= limiteInferior && resultado <= limiteSuperior)
+									{
+										<text><span style="color:forestgreen;">@item.Resultado</span></text>
+									}
+									else
+									{
+										<text><span style="color:red;">@item.Resultado</span></text>
+									}
+								}
+								else if (valorReferencia.Contains("<") && !valorReferencia.Contains("="))
+								{
+									valorReferencia = valorReferencia.Replace("<", "");
+									if (Convert.ToDouble(item.Resultado) >= Convert.ToDouble(valorReferencia))
+									{
+										<text><span style="color:red;">@item.Resultado</span></text>
+									}
+									else
+									{
+										<text><span style="color:forestgreen;">@item.Resultado</span></text>
+									}
+								}
+								else if (valorReferencia.Contains("<="))
+								{
+									valorReferencia = valorReferencia.Replace("<=", "");
+									if (Convert.ToDouble(item.Resultado) > Convert.ToDouble(valorReferencia))
+									{
+										<text><span style="color:red;">@item.Resultado</span></text>
+									}
+									else
+									{
+										<text><span style="color:forestgreen;">@item.Resultado</span></text>
+									}
+								}
+								else if (valorReferencia.Contains(">") && !valorReferencia.Contains("="))
+								{
+									valorReferencia = valorReferencia.Replace(">", "");
+									if (Convert.ToDouble(item.Resultado) <= Convert.ToDouble(valorReferencia))
+									{
+										<text><span style="color:red;">@item.Resultado</span></text>
+									}
+									else
+									{
+										<text><span style="color:forestgreen;">@item.Resultado</span></text>
+									}
+								}
+								else if (valorReferencia.Contains(">="))
+								{
+									valorReferencia = valorReferencia.Replace(">=", "");
+									if (Convert.ToDouble(item.Resultado) < Convert.ToDouble(valorReferencia))
+									{
+										<text><span style="color:red;">@item.Resultado</span></text>
+									}
+									else
+									{
+										<text><span style="color:forestgreen;">@item.Resultado</span></text>
+									}
+								}
+								else
+								{
+									//Compruebo si el valor de referencia es un string o un valor numérico
+									if (Regex.IsMatch(valorReferencia, @"\w*") == true)
+									{
+										if (!item.Resultado.ToUpper().Equals(valorReferencia.ToUpper()))
+										{
+											<text><span style="color:red;">@item.Resultado.ToUpper()</span></text>
+										}
+										else
+										{
+											<text><span style="color:forestgreen;">@item.Resultado.ToUpper()</span></text>
+										}
+									}
+									else
+									{
+										if (Convert.ToDouble(item.Resultado) != Convert.ToDouble(valorReferencia))
+										{
+											<text><span style="color:red;">@item.Resultado</span></text>
+										}
+										else
+										{
+											<text><span style="color:forestgreen;">@item.Resultado</span></text>
+										}
+									}
+								}
+							}
+							//La prueba todavía no tiene un resultado asignado
+							else
+							{
+								<div class="form-group">
+									<input asp-for="@item.Resultado" name="peticionesPruebas[@Model.IndexOf(item)].Resultado" class="form-control" />
+								</div>
+							}
+						</td>
+						<td>
+							@{
+								if (item.IdPruebaNavigation.Unidades == null)
+								{
+									<text>-</text>
+								}
+								else
+								{
+									<text>@item.IdPruebaNavigation.Unidades</text>
+								}
+							}
+						</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+	<div class="col-12 d-flex justify-content-end pe-2" style="border-top:1px solid lightgrey;">
+		<div class="fw-light ps-3 pt-3">
+			Nº Petición: @ViewData["NPeticion"] - Fecha Visita: @ViewData["FechaVisita"] - @ViewData["NombreCompleto"] - Estado: @ViewData["Estado"]
+		</div>
+		<div class="ms-auto pt-2">
+		@if (ViewData["Resultados"].Equals("No completados"))
+		{
+				<button type="submit" class="btn btn-primary me-1 mt-1 fw-bold " style="background-color:#0243a6;">Guardar</button>
+		}
+		else
+		{
+				<button asp-area="" asp-action="Index" asp-controller="CrearPDF" asp-route-idPeticion="@ViewData["idPeticion"]" class="btn btn-primary me-1 mt-1 fw-bold " style="background-color:forestgreen;">Enviar</button>
+		}
+			<a class="btn btn-primary me-1 mt-1 fw-bold " style="background-color:cornflowerblue;" asp-area="" asp-controller="Peticiones" asp-action="EditarResultados" asp-route-id="@id">Editar</a>
+			<a asp-action="Index" class="btn btn-light me-2 mt-1 " style="color:#0d6efd; border:1px solid #0d6efd;">Cancelar</a>
+		</div>
+	</div>
+}
+
+
+@section Scripts {
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#tabla_resultados").DataTable({
+				"language": {
+					"lengthMenu": "Mostrar _MENU_ registros",
+					"zeroRecords": "No se encontraron resultados",
+					"info": "Mostrando del _START_ al _END_ de un total de _TOTAL_ registros",
+					"infoEmpty": "Mostrando del 0 al 0 de un total de 0 registros",
+					"infoFiltered": "(filtrando de un total de _MAX_ registros)",
+					"sSearch": "Buscar:",
+					"oPaginate": {
+						"sFirst": "Primero",
+						"sLast": "Último",
+						"sNext": "Siguiente",
+						"sPrevious": "Anterior"
+					},
+					"sProcessing": "Procesando...",
+				}
+			});
+		});
+	</script>
+}
+
+@section Styles {
+	<style>
+		#tabla_resultados thead th {
+			background-color: #e2e2e2;
+			text-align: center;
+		}
+
+		.content-container.flex-column.flex-grow-1.p-3.rounded-bottom {
+			overflow: hidden !important;
+		}
+
+		.row.dt-row {
+			overflow-y: auto !important;
+			scrollbar-width: thin;
+			height: 42vh;
+			max-height: 200vh;
+			min-height: 20vh;
+			margin-bottom: 1%;
+		}
+
+		#tabla_resultados_info {
+			width: max-content;
+		}
+	</style>
+}

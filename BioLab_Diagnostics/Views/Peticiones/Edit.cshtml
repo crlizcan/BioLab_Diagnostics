@@ -1,0 +1,60 @@
+﻿@model BioLab_Diagnostics.Models.Peticiones
+
+@{
+    ViewData["Title"] = "Peticiones > Añadir resultados";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<ul class="nav nav-tabs" style="margin-bottom: 1%;">
+    <li class="nav-item">
+        <a asp-area="" asp-controller="Peticiones" asp-action="PeticionCliente" class="nav-link disabled" aria-disabled="true">Paciente</a>
+    </li>
+    <li class="nav-item">
+        <a asp-area="" asp-controller="Peticiones" asp-action="PeticionPruebas" class="nav-link disabled" aria-disabled="true">Pruebas</a>
+    </li>
+    <li class="nav-item">
+        <a asp-area="" asp-controller="Peticiones" asp-action="Edit" class="nav-link active" aria-current="page">Resultados</a>
+    </li>
+</ul>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdPeticion" />
+            <div class="form-group">
+                <label asp-for="DniCliente" class="control-label"></label>
+                <select asp-for="DniCliente" class="form-control" asp-items="ViewBag.DniCliente"></select>
+                <span asp-validation-for="DniCliente" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaVisita" class="control-label"></label>
+                <input asp-for="FechaVisita" class="form-control" />
+                <span asp-validation-for="FechaVisita" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaInforme" class="control-label"></label>
+                <input asp-for="FechaInforme" class="form-control" />
+                <span asp-validation-for="FechaInforme" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Importe" class="control-label"></label>
+                <input asp-for="Importe" class="form-control" />
+                <span asp-validation-for="Importe" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Estado" class="control-label"></label>
+                <input asp-for="Estado" class="form-control" />
+                <span asp-validation-for="Estado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
