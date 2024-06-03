@@ -19,7 +19,7 @@
 </div>
 @using (Html.BeginForm("GuardarSeleccionados", "Peticiones", FormMethod.Post))
 {
-	<div class="p-3 pt-0 pb-2">
+	<div class="p-3 pt-0 pb-2" style="height: 65vh;">
 		<table class="table" style="text-align: center;" id="table_seleccion_pruebas">
 			<thead>
 				<tr>
@@ -45,29 +45,32 @@
 					{
 						<tr>
 							<td>
-							<input type="checkbox" class="checkbox-seleccion" data-id="@item.IdPrueba" />
-						</td>
-						<td>
-							@Html.DisplayFor(modelItem => item.Nombre)
-						</td>
-						<td>
-							@Html.DisplayFor(modelItem => item.Descripcion)
-						</td>
-						<td>
-							@Html.DisplayFor(modelItem => item.Precio)
-						</td>
-						<td>
-							@Html.DisplayFor(modelItem => item.IdDepartamentoNavigation.Nombre)
-						</td>
-					</tr>
+								<input type="checkbox" class="checkbox-seleccion" data-id="@item.IdPrueba" />
+							</td>
+							<td>
+								@Html.DisplayFor(modelItem => item.Nombre)
+							</td>
+							<td>
+								@Html.DisplayFor(modelItem => item.Descripcion)
+							</td>
+							<td>
+								@Html.DisplayFor(modelItem => item.Precio)
+							</td>
+							<td>
+								@Html.DisplayFor(modelItem => item.IdDepartamentoNavigation.Nombre)
+							</td>
+						</tr>
 					}
 				}
 			</tbody>
 		</table>
+		<div id="contador-pruebas" class="text-end mb-3 mt-3" style="border: 1px solid rgb(215, 215, 215); background-color: #efeff1; padding: 0.8%;border-radius: 8px;padding-right: 4%;">
+			Nº Pruebas seleccionadas: 0 - Precio total: 0.00€
+		</div>
 	</div>
-	<div class="col-12 d-flex justify-content-end pe-2" style="border-top:1px solid lightgrey;">
-@* 		Nº Petición: @ViewData["idPeticion"] - Fecha visita: @ViewData["fechaVisita"] - @ViewData["nombreApellidosPaciente"] - Estado: @ViewData["estado"]
- *@		@Html.Hidden("idPeticion", ViewData["idPeticion"])
+	<div class="col-12 d-flex justify-content-end pe-2" style="border-top:1px solid lightgrey; padding-top: 9px;">
+		@* 		Nº Petición: @ViewData["idPeticion"] - Fecha visita: @ViewData["fechaVisita"] - @ViewData["nombreApellidosPaciente"] - Estado: @ViewData["estado"]
+	*@		@Html.Hidden("idPeticion", ViewData["idPeticion"])
 		<input type="hidden" name="idsSeleccionados" id="idsSeleccionados" />
 		<button type="submit" class="btn btn-primary me-1 mt-1 fw-bold " style="background-color:forestgreen;">Confirmar</button>
 		<a asp-action="Index" class="btn btn-light me-2 mt-1 " style="color:#0d6efd; border:1px solid #0d6efd;">Cancelar</a>
@@ -77,14 +80,19 @@
 @section Scripts {
 	<script>
 		$(document).ready(function () {
+
 			$(".checkbox-seleccion").change(function () {
 				var idsSeleccionados = [];
+				var precioTotal = 0;
 
 				$(".checkbox-seleccion:checked").each(function () {
+					var precioPrueba = parseFloat($(this).closest("tr").find("td:eq(3)").text());
+					precioTotal += precioPrueba;
 					idsSeleccionados.push($(this).data("id"));
 				});
 
 				$("#idsSeleccionados").val(idsSeleccionados.join(","));
+				$("#contador-pruebas").html("Nº Pruebas seleccionadas: " + idsSeleccionados.length + " - Precio total: " + precioTotal.toFixed(2) + "€");
 			});
 
 			$("#table_seleccion_pruebas").DataTable({

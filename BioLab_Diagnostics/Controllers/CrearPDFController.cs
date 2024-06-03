@@ -29,7 +29,7 @@ namespace BioLab_Diagnostics.Controllers
 
 		public async Task<IActionResult> IndexAsync(int idPeticion)
 		{
-			var peticionesPruebas = _context.PeticionesPruebas.Include(o => o.IdPeticionNavigation).Include(v => v.IdPruebaNavigation).Include(vr => vr.IdPruebaNavigation.ValoresReferencia).Where(p => p.IdPeticion == idPeticion).ToList();
+			var peticionesPruebas = _context.PeticionesPruebas.Include(o => o.IdPeticionNavigation).Include(v => v.IdPruebaNavigation).Include(vr => vr.IdPruebaNavigation.ValoresReferencia).Include(c => c.IdPeticionNavigation.DniClienteNavigation).Where(p => p.IdPeticion == idPeticion).ToList();
 			var peticion = _context.Peticiones.Include(p => p.DniClienteNavigation).Where(p => p.IdPeticion == idPeticion).FirstOrDefault();
 			var email = peticion.DniClienteNavigation.Email;
 			var nombre = peticion.DniClienteNavigation.Nombre + " " + peticion.DniClienteNavigation.Apellidos;
@@ -72,7 +72,8 @@ namespace BioLab_Diagnostics.Controllers
                 .Include(o => o.IdPeticionNavigation)
                 .Include(v => v.IdPruebaNavigation)
                 .Include(vr => vr.IdPruebaNavigation.ValoresReferencia)
-                .Where(p => p.IdPeticion == idPeticion)
+				.Include(c => c.IdPeticionNavigation.DniClienteNavigation)
+				.Where(p => p.IdPeticion == idPeticion)
                 .ToList();
 
             var informe = new ViewAsPdf("Index", peticionesPruebas)

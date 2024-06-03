@@ -1,0 +1,25 @@
+{
+  "dependencies": {},
+  "parameters": {
+    "biolabdiagnostics.resourceGroupName": {
+      "Name": "biolabdiagnostics.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "BioLabDiagnostics20240522101708ResourceGroup"
+    },
+    "biolabdiagnostics.resourceGroupLocation": {
+      "Name": "biolabdiagnostics.resourceGroupLocation",
+      "Type": null,
+      "Value": "eastus"
+    },
+    "biolabdiagnostics.subscriptionId": {
+      "Name": "biolabdiagnostics.subscriptionId",
+      "Type": "subscription",
+      "Value": "e7053f05-753b-4b31-aec0-606fd286e6df"
+    },
+    "biolabdiagnostics.resourceName": {
+      "Name": "biolabdiagnostics.resourceName",
+      "Type": null,
+      "Value": "biolabdiagnostics"
+    }
+  }
+}
