@@ -9,8 +9,6 @@ namespace BioLab_Diagnostics.Controllers
 	{
 		private readonly UserManager<Usuario> _userManager;
 
-		//No funciona si le doy al Nombre, no me lleva a la información de usuario
-		//Esto le he añadido
 		public MensajeriaController(UserManager<Usuario> userManager)
 		{
 			_userManager = userManager;
@@ -22,9 +20,5 @@ namespace BioLab_Diagnostics.Controllers
 			ViewData["Imagen"] = usuario.Imagen;
 			return View("MensajeriaIndex");
 		}
-		//public IActionResult Index()
-		//{
-		//	return View("MensajeriaIndex");
-		//}
 	}
 }

@@ -76,9 +76,15 @@
 					@Html.DisplayFor(modelItem => item.Estado)
 				</td>
 				<td class="col-4" style="width:5%;">
-					@{
+					@if (item.Estado.Equals("ENVIADO"))
+					{
+						<a asp-action="PeticionResultados" asp-route-id="@item.IdPeticion" style="text-decoration: none;">
+							<i class="bi bi-search"></i>
+						</a>
+					} else
+					{
 						var estado = item.Estado;
-						if(item.Estado.Equals("S. PRUEBAS"))
+						if (item.Estado.Equals("S. PRUEBAS"))
 						{
 							<a asp-action="PeticionPruebas" asp-route-id="@item.IdPeticion" asp-route-idPeticion="@item.IdPeticion"><i class="bi bi-pencil-square"></i></a>
 						}
@@ -87,8 +93,6 @@
 							<a asp-action="PeticionResultados" asp-route-id="@item.IdPeticion"><i class="bi bi-pencil-square"></i></a>
 						}
 					}
-					@* <a asp-action="PeticionResultados" asp-route-id="@item.IdPeticion"><i class="bi bi-pencil-square"></i></a> *@
-					<a asp-action="Details" asp-route-id="@item.IdPeticion"><i class="bi bi-search"></i></a>
 					<a href="#" class="pe-auto" data-bs-toggle="modal" data-bs-target="#Modal_@item.IdPeticion">
 						<i class="bi bi-x-square"></i>
 					</a>

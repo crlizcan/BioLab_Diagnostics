@@ -8,6 +8,9 @@ using Microsoft.EntityFrameworkCore;
 using BioLab_Diagnostics.Models;
 using BioLab_Diagnostics.Data;
 using Microsoft.AspNetCore.Identity;
+using System.Globalization;
+using NodaTime;
+using System.Drawing;
 
 namespace BioLab_Diagnostics.Controllers
 {
@@ -154,7 +157,7 @@ namespace BioLab_Diagnostics.Controllers
 							vr.ValorReferencia = vm.Operacion + vm.ValorReferencia;
 						}
 						vr.Sexo = null;
-						_context.Add(vr);
+						_context.ValoresReferencia.Add(vr);
 						await _context.SaveChangesAsync();
 						return RedirectToAction(nameof(Index));
 					}
@@ -184,48 +187,267 @@ namespace BioLab_Diagnostics.Controllers
             {
                 return NotFound();
             }
+            var valoresReferencia = await _context.ValoresReferencia.Where(vr => vr.IdPrueba == id).ToListAsync();
+			var pruebasValoresReferenciaViewModel = new PruebasValoresReferenciaViewModel { };
+			if (valoresReferencia.Count() > 1)
+            {
+				pruebasValoresReferenciaViewModel.Vr_unico = "Si";
+                //Intervalo
+                if (valoresReferencia[0].ValorReferencia.Contains("-"))
+                {
+                    String[] intervalo = null;
+
+					pruebasValoresReferenciaViewModel.Operacion = "Intervalo";
+                    for(int i = 0; i<valoresReferencia.Count(); i++)
+                    {
+                        if (valoresReferencia[i].Sexo.Equals("M")){
+							intervalo = valoresReferencia[i].ValorReferencia.Split("-");
+							double limiteInferior = double.Parse(intervalo[0], CultureInfo.InvariantCulture);
+							double limiteSuperior = double.Parse(intervalo[1], CultureInfo.InvariantCulture);
+							pruebasValoresReferenciaViewModel.ValorReferenciaInicioMujer = limiteInferior.ToString();
+							pruebasValoresReferenciaViewModel.ValorReferenciaFinMujer = limiteSuperior.ToString();
+						} else
+                        {
+							intervalo = valoresReferencia[i].ValorReferencia.Split("-");
+							double limiteInferior = double.Parse(intervalo[0], CultureInfo.InvariantCulture);
+							double limiteSuperior = double.Parse(intervalo[1], CultureInfo.InvariantCulture);
+							pruebasValoresReferenciaViewModel.ValorReferenciaInicioHombre = limiteInferior.ToString();
+							pruebasValoresReferenciaViewModel.ValorReferenciaFinHombre = limiteSuperior.ToString();
+						}
+                    }
+
+				} else if (valoresReferencia[0].ValorReferencia.Contains("<") || valoresReferencia[0].ValorReferencia.Contains(">") || valoresReferencia[0].ValorReferencia.Contains("<=") || valoresReferencia[0].ValorReferencia.Contains(">="))
+                {
+					if (valoresReferencia[0].ValorReferencia.Contains("<="))
+					{
+						pruebasValoresReferenciaViewModel.Operacion = "<=";
+						for (int i = 0; i < valoresReferencia.Count(); i++)
+						{
+							if (valoresReferencia[i].Sexo.Equals("M"))
+							{
+								pruebasValoresReferenciaViewModel.ValorReferencia = valoresReferencia[i].ValorReferencia.Replace("<=", "");
+							}
+							else
+							{
+								pruebasValoresReferenciaViewModel.ValorReferencia = valoresReferencia[i].ValorReferencia.Replace("<=", "");
+							}
+						}
+					}
+					else if (valoresReferencia[0].ValorReferencia.Contains(">="))
+					{
+						pruebasValoresReferenciaViewModel.Operacion = ">=";
+						for (int i = 0; i < valoresReferencia.Count(); i++)
+						{
+							if (valoresReferencia[i].Sexo.Equals("M"))
+							{
+								pruebasValoresReferenciaViewModel.ValorReferencia = valoresReferencia[i].ValorReferencia.Replace(">=", "");
+							}
+							else
+							{
+								pruebasValoresReferenciaViewModel.ValorReferencia = valoresReferencia[i].ValorReferencia.Replace(">=", "");
+							}
+						}
+					}
+					else if (valoresReferencia[0].ValorReferencia.Contains("<") && !valoresReferencia[0].ValorReferencia.Contains("="))
+					{
+						pruebasValoresReferenciaViewModel.Operacion = "<";
+						for (int i = 0; i < valoresReferencia.Count(); i++)
+						{
+							if (valoresReferencia[i].Sexo.Equals("M"))
+							{
+								pruebasValoresReferenciaViewModel.ValorReferencia = valoresReferencia[i].ValorReferencia.Replace("<", "");
+							}
+							else
+							{
+								pruebasValoresReferenciaViewModel.ValorReferencia = valoresReferencia[i].ValorReferencia.Replace("<", "");
+							}
+						}
+					}
+					else if (valoresReferencia[0].ValorReferencia.Contains(">") && !valoresReferencia[0].ValorReferencia.Contains("="))
+					{
+						pruebasValoresReferenciaViewModel.Operacion = ">";
+						for (int i = 0; i < valoresReferencia.Count(); i++)
+						{
+							if (valoresReferencia[i].Sexo.Equals("M"))
+							{
+								pruebasValoresReferenciaViewModel.ValorReferencia = valoresReferencia[i].ValorReferencia.Replace(">", "");
+							}
+							else
+							{
+								pruebasValoresReferenciaViewModel.ValorReferencia = valoresReferencia[i].ValorReferencia.Replace(">", "");
+							}
+						}
+					}
+				} else //Igual
+                {
+                    pruebasValoresReferenciaViewModel.Operacion = "=";
+					for (int i = 0; i < valoresReferencia.Count(); i++)
+					{
+						if (valoresReferencia[i].Sexo.Equals("M"))
+						{
+							pruebasValoresReferenciaViewModel.ValorReferencia = valoresReferencia[i].ValorReferencia.ToUpper();
+						}
+						else
+						{
+							pruebasValoresReferenciaViewModel.ValorReferencia = valoresReferencia[i].ValorReferencia.ToUpper();
+						}
+					}
+				}
+
+			} else
+            {
+				pruebasValoresReferenciaViewModel.Vr_unico = "No";
+                pruebasValoresReferenciaViewModel.Sexo = "";
+				//Intervalo
+				if (valoresReferencia[0].ValorReferencia.Contains("-"))
+				{
+					pruebasValoresReferenciaViewModel.Operacion = "Intervalo";
+					var intervalo = valoresReferencia[0].ValorReferencia.Split("-");
+					double limiteInferior = double.Parse(intervalo[0], CultureInfo.InvariantCulture);
+					double limiteSuperior = double.Parse(intervalo[1], CultureInfo.InvariantCulture);
+                    pruebasValoresReferenciaViewModel.ValorReferenciaInicio = limiteInferior.ToString();
+                    pruebasValoresReferenciaViewModel.ValorReferenciaFin = limiteSuperior.ToString();
+				}
+				else if (valoresReferencia[0].ValorReferencia.Contains("<") || valoresReferencia[0].ValorReferencia.Contains(">") || valoresReferencia[0].ValorReferencia.Contains("<=") || valoresReferencia[0].ValorReferencia.Contains(">="))
+				{
+					if (valoresReferencia[0].ValorReferencia.Contains("<="))
+					{
+						pruebasValoresReferenciaViewModel.Operacion = "<=";
+						pruebasValoresReferenciaViewModel.ValorReferencia = valoresReferencia[0].ValorReferencia.Replace("<=", "");
+					}
+					else if (valoresReferencia[0].ValorReferencia.Contains(">="))
+					{
+						pruebasValoresReferenciaViewModel.Operacion = ">=";
+						pruebasValoresReferenciaViewModel.ValorReferencia = valoresReferencia[0].ValorReferencia.Replace(">=", "");
+					}
+					else if (valoresReferencia[0].ValorReferencia.Contains("<") && !valoresReferencia[0].ValorReferencia.Contains("="))
+					{
+						pruebasValoresReferenciaViewModel.Operacion = "<";
+						pruebasValoresReferenciaViewModel.ValorReferencia = valoresReferencia[0].ValorReferencia.Replace("<", "");
+					}
+					else if (valoresReferencia[0].ValorReferencia.Contains(">") && !valoresReferencia[0].ValorReferencia.Contains("="))
+					{
+						pruebasValoresReferenciaViewModel.Operacion = ">";
+						pruebasValoresReferenciaViewModel.ValorReferencia = valoresReferencia[0].ValorReferencia.Replace(">", "");
+					}
+				}
+				else //Igual
+				{
+					pruebasValoresReferenciaViewModel.Operacion = "=";
+					pruebasValoresReferenciaViewModel.ValorReferencia = valoresReferencia[0].ValorReferencia.ToUpper();
+				}
+			}
+
+			pruebasValoresReferenciaViewModel.pruebas = pruebas;
             ViewData["IdDepartamento"] = new SelectList(_context.Departamentos, "IdDepartamento", "Nombre", pruebas.IdDepartamento);
 			var usuario = await _userManager.GetUserAsync(User);
 			ViewData["NombreApellido"] = UtilidadesBioLab.ObtenerDatosUsuario(usuario);
 			ViewData["Imagen"] = usuario.Imagen;
-			return View(pruebas);
+			return View(pruebasValoresReferenciaViewModel);
         }
 
         // POST: Pruebas/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, Pruebas pruebas)
+        public async Task<IActionResult> Edit(int id, PruebasValoresReferenciaViewModel vm)
         {
-            if (id != pruebas.IdPrueba)
-            {
-                return NotFound();
-            }
-
             if (ModelState.IsValid)
             {
-                try
-                {
-                    _context.Update(pruebas);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!PruebasExists(pruebas.IdPrueba))
+                //Edito la prueba
+
+                Pruebas prueba = await _context.Pruebas.FirstOrDefaultAsync(v => v.IdPrueba == id);
+				prueba.Nombre = vm.pruebas.Nombre;
+				prueba.Precio = vm.pruebas.Precio;
+				prueba.Descripcion = vm.pruebas.Descripcion;
+				prueba.IdDepartamento = vm.pruebas.IdDepartamento;
+				_context.Pruebas.Update(prueba);
+				await _context.SaveChangesAsync();
+                var valoresReferencia = await _context.ValoresReferencia
+					.Where(v => v.IdPrueba == id)
+					.ToListAsync();
+				//Edito los valores de referencia
+				if (vm.Vr_unico.Equals("Si"))
+				{
+                    //Obtengo el IdReferencia, en este caso son dos
+                    if (!vm.Operacion.Equals("Intervalo"))
                     {
-                        return NotFound();
+                        foreach (var valor in valoresReferencia)
+                        {
+                            if (vm.ValorReferenciaMujer !=null)
+                            {
+								if (!vm.Operacion.Equals("="))
+								{
+									valor.ValorReferencia = vm.Operacion + vm.ValorReferenciaMujer;
+								} else
+								{
+                                    valor.ValorReferencia = vm.ValorReferenciaMujer;
+                                }
+                                _context.ValoresReferencia.Update(valor);
+                                await _context.SaveChangesAsync();
+                            }
+                            else
+                            {
+                                if (!vm.Operacion.Equals("="))
+                                {
+                                    valor.ValorReferencia = vm.Operacion + vm.ValorReferenciaHombre;
+								} else
+								{
+									valor.ValorReferencia = vm.ValorReferenciaHombre;
+								}
+								_context.ValoresReferencia.Update(valor);
+                                await _context.SaveChangesAsync();
+                            }
+                        }
                     }
                     else
                     {
-                        throw;
+                        foreach (var valor in valoresReferencia)
+                        {
+                            if (vm.ValorReferenciaInicioMujer != null)
+                            {
+                                valor.ValorReferencia = vm.ValorReferenciaInicioMujer + "-" + vm.ValorReferenciaFinMujer;
+                                _context.ValoresReferencia.Update(valor);
+                                await _context.SaveChangesAsync();
+                            }
+                            else
+                            {
+                                valor.ValorReferencia = vm.ValorReferenciaInicioHombre + "-" + vm.ValorReferenciaFinHombre;
+                                _context.ValoresReferencia.Update(valor);
+                                await _context.SaveChangesAsync();
+                            }
+                        }
                     }
-                }
+                } else
+				{
+                    //Obtengo el IdReferencia, en este caso es uno
+                    var idReferencia = prueba.ValoresReferencia.First().IdReferencia;
+                    if (!vm.Operacion.Equals("Intervalo"))
+                    {
+						if (!vm.Operacion.Equals("=")){
+                            valoresReferencia[0].ValorReferencia = vm.Operacion + vm.ValorReferencia;
+                        } else
+						{
+                            valoresReferencia[0].ValorReferencia = vm.ValorReferencia;
+                        }
+                        _context.ValoresReferencia.Update(valoresReferencia[0]);
+                    }
+                    else
+                    {
+                        valoresReferencia[0].ValorReferencia = vm.ValorReferenciaInicio + "-" + vm.ValorReferenciaFin;
+                        _context.ValoresReferencia.Update(valoresReferencia[0]);
+                    }
+                    await _context.SaveChangesAsync();
+				}
                 return RedirectToAction(nameof(Index));
+            } else
+			{
+                ViewData["IdDepartamento"] = new SelectList(_context.Departamentos, "IdDepartamento", "Descripcion", vm.pruebas.IdDepartamento);
+                return View(vm);
             }
-            ViewData["IdDepartamento"] = new SelectList(_context.Departamentos, "IdDepartamento", "Descripcion", pruebas.IdDepartamento);
-            return View(pruebas);
+
         }
+
+
 
         // GET: Pruebas/Delete/5
         public async Task<IActionResult> Delete(int? id)
@@ -256,12 +478,6 @@ namespace BioLab_Diagnostics.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
 			var prueba = await _context.Pruebas.FindAsync(id);
-			//var valoresReferencia = _context.ValoresReferencia.Where(c => c.IdPrueba == pruebas.IdPrueba).ToList();
-   //         foreach (var item in valoresReferencia)
-   //         {
-			//	_context.ValoresReferencia.Remove(item);
-			//	await _context.SaveChangesAsync();
-			//}
             prueba.EsActivo = false;
             _context.Pruebas.Update(prueba);
 			await _context.SaveChangesAsync();

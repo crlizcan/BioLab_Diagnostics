@@ -7,105 +7,120 @@
 
 <div class="container" style="padding:2%; padding-left:4%;" >
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-12" >
 			<form asp-action="Create" class="row g-3">
 				<div asp-validation-summary="ModelOnly" class="text-danger"></div>
-				<div class="col-md-6 fw-light text-secondary" style="width:45%; margin-right:7%;">
-					<label asp-for="pruebas.Nombre" class="form-label"></label>
-					<input asp-for="pruebas.Nombre" class="form-control" />
-					<span asp-validation-for="pruebas.Nombre" class="text-danger"></span>
-				</div>
-				<div class="col-md-6 fw-light text-secondary" style="width:45%;" >
-					<label asp-for="pruebas.IdDepartamento" class="form-label">Departamento</label>
-					<select asp-for="pruebas.IdDepartamento" class="form-select" asp-items="ViewBag.IdDepartamento" ></select>
-				</div>
-
-				<div class="col-md-6 fw-light text-secondary" style="width:45%; margin-right:7%;">
-					<label asp-for="pruebas.Descripcion" class="form-label">Descripción</label>
-					<input asp-for="pruebas.Descripcion" class="form-control" />
-					<span asp-validation-for="pruebas.Descripcion" class="text-danger"></span>
-				</div>
-				<div class="col-md-6 fw-light text-secondary" style="width:45%;">
-					<label asp-for="pruebas.Precio" class="form-label"></label>
-					<div class="input-group">
-						<input asp-for="pruebas.Precio" class="form-control" />
-						<span class="input-group-text">€</span>
+				<div style="height: 62vh; overflow-y: auto; overflow-x: hidden; scrollbar-width: thin;">
+					<div class="row">
+					<div class="col-md-6 fw-light text-secondary mb-3" style="width:45%; margin-right:5%;">
+						<label asp-for="pruebas.Nombre" class="form-label"></label>
+						<input asp-for="pruebas.Nombre" class="form-control" />
+						<span asp-validation-for="pruebas.Nombre" class="text-danger"></span>
 					</div>
-					<span asp-validation-for="pruebas.Precio" class="text-danger"></span>
-				</div>
-				<div class="col-md-6 fw-light text-secondary" style="width:45%; margin-right:7%;">
-					<label asp-for="pruebas.Unidades" class="form-label">Unidades</label>
-					<input asp-for="pruebas.Unidades" class="form-control" />
-					<span asp-validation-for="pruebas.Unidades" class="text-danger"></span>
-				</div>
-				<div class="col-md-6 fw-light text-secondary" style="width:45%;">
-					<label class="form-label">¿Su valor de referencia depende del sexo del paciente?</label>
-					<select class="form-select" id="opc-sexo" onchange="capturarSeleccion()" asp-for="Vr_unico">
-						<option value="Si">Si</option>
-						<option value="No" selected>No</option>
-					</select>
-					<span class="text-danger"></span>
-				</div>
-				<div class="col-md-6 fw-light text-secondary" style="width:45%; margin-right:7%;">
-					<label class="form-label">Tipo de operación</label>
-					<select class="form-select" id="opc-operacion" onchange="capturarSeleccion()" asp-for="Operacion">
-						<option value="=" selected>Igual</option>
-						<option value="Intervalo">Intervalo</option>
-						<option value=">" >Mayor qué (>)</option>
-						<option value="<">Menor qué (<)</option>
-						<option value=">=">Mayor o igual qué (>=)</option>
-						<option value="<=">Menor o igual qué (<=)</option>
-					</select>
-					<span class="text-danger"></span>
-				</div>
-				@*Valor de referencia único, NO intervalo*@
-				<div class="col-md-6 fw-light text-secondary" style="width:45%;" id="vr-unico" hidden>
-					<label asp-for="ValorReferencia" class="form-label">Valor de referencia</label>
-					<input asp-for="ValorReferencia" class="form-control" />
-					<span asp-validation-for="ValorReferencia" class="text-danger"></span>
-				</div>
-				@*Valor de referencia único, SÍ intervalo*@
-				<div class="col-md-6 fw-light text-secondary" style="width:45%;" id="vr-unico-int-ini" hidden>
-					<label asp-for="ValorReferenciaInicio" class="form-label">Valor de referencia inicial</label>
-					<input asp-for="ValorReferenciaInicio" class="form-control" />
-					<span asp-validation-for="ValorReferenciaInicio" class="text-danger"></span>
-				</div>
-				<div class="col-md-6 fw-light text-secondary" style="width:45%; margin-right:7%;" id="vr-unico-int-fin" hidden>
-					<label asp-for="ValorReferenciaFin" class="form-label">Valor de referencia final</label>
-					<input asp-for="ValorReferenciaFin" class="form-control" />
-					<span asp-validation-for="ValorReferenciaFin" class="text-danger"></span>
-				</div>
-				@*Valor de referencia doble, NO intervalo*@
-				<div class="col-md-6 fw-light text-secondary" style="width:45%;" id="vr-doble-m" hidden>
-					<label asp-for="ValorReferenciaMujer" class="form-label">Valor de referencia: Mujer</label>
-					<input asp-for="ValorReferenciaMujer" class="form-control" />
-					<span asp-validation-for="ValorReferenciaMujer" class="text-danger"></span>
-				</div>
-				<div class="col-md-6 fw-light text-secondary" style="width:45%; margin-right:7%;" id="vr-doble-h" hidden>
-					<label asp-for="ValorReferenciaHombre" class="form-label">Valor de referencia: Hombre</label>
-					<input asp-for="ValorReferenciaHombre" class="form-control" />
-					<span asp-validation-for="ValorReferenciaHombre" class="text-danger"></span>
-				</div>
-				@*Valor de referencia doble, SI intervalo*@
-				<div class="col-md-6 fw-light text-secondary" style="width:45%;" id="vr-doble-m-int-ini" hidden>
-					<label asp-for="ValorReferenciaInicioMujer" class="form-label">Valor de referencia inicial: Mujer</label>
-					<input asp-for="ValorReferenciaInicioMujer" class="form-control" />
-					<span asp-validation-for="ValorReferenciaInicioMujer" class="text-danger"></span>
-				</div>
-				<div class="col-md-6 fw-light text-secondary" style="width:45%; margin-right:7%;" id="vr-doble-m-int-fin" hidden>
-					<label asp-for="ValorReferenciaFinMujer" class="form-label">Valor de referencia final: Mujer</label>
-					<input asp-for="ValorReferenciaFinMujer" class="form-control" />
-					<span asp-validation-for="ValorReferenciaFinMujer" class="text-danger"></span>
-				</div>
-				<div class="col-md-6 fw-light text-secondary" style="width:45%;" id="vr-doble-h-int-ini" hidden>
-					<label asp-for="ValorReferenciaInicioHombre" class="form-label">Valor de referencia inicial: Hombre</label>
-					<input asp-for="ValorReferenciaInicioHombre" class="form-control" />
-					<span asp-validation-for="ValorReferenciaInicioHombre" class="text-danger"></span>
-				</div>
-				<div class="col-md-6 fw-light text-secondary" style="width:45%; margin-right:7%;" id="vr-doble-h-int-fin" hidden>
-					<label asp-for="ValorReferenciaFinHombre" class="form-label">Valor de referencia final: Hombre</label>
-					<input asp-for="ValorReferenciaFinHombre" class="form-control" />
-					<span asp-validation-for="ValorReferenciaFinHombre" class="text-danger"></span>
+					<div class="col-md-6 fw-light text-secondary mb-3" style="width:45%;" >
+						<label asp-for="pruebas.IdDepartamento" class="form-label">Departamento</label>
+						<select asp-for="pruebas.IdDepartamento" class="form-select" asp-items="ViewBag.IdDepartamento" ></select>
+					</div>
+					</div>
+					<div class="row">
+					<div class="col-md-6 fw-light text-secondary mb-3" style="width:45%; margin-right:5%;">
+						<label asp-for="pruebas.Descripcion" class="form-label">Descripción</label>
+						<input asp-for="pruebas.Descripcion" class="form-control" />
+						<span asp-validation-for="pruebas.Descripcion" class="text-danger"></span>
+					</div>
+					<div class="col-md-6 fw-light text-secondary mb-3" style="width:45%;">
+						<label asp-for="pruebas.Precio" class="form-label"></label>
+						<div class="input-group">
+							<input asp-for="pruebas.Precio" class="form-control" />
+							<span class="input-group-text">€</span>
+						</div>
+						<span asp-validation-for="pruebas.Precio" class="text-danger"></span>
+					</div>
+					</div>
+					<div class="row">
+					<div class="col-md-6 fw-light text-secondary mb-3" style="width:45%; margin-right:5%;">
+						<label asp-for="pruebas.Unidades" class="form-label">Unidades</label>
+						<input asp-for="pruebas.Unidades" class="form-control" />
+						<span asp-validation-for="pruebas.Unidades" class="text-danger"></span>
+					</div>
+					<div class="col-md-6 fw-light text-secondary mb-3" style="width:45%;">
+						<label class="form-label">¿Su valor de referencia depende del sexo del paciente?</label>
+						<select class="form-select" id="opc-sexo" onchange="capturarSeleccion()" asp-for="Vr_unico">
+							<option value="Si">Si</option>
+							<option value="No" selected>No</option>
+						</select>
+						<span class="text-danger"></span>
+					</div>
+					</div>
+					<div class="col-md-6 fw-light text-secondary mb-3" style="width:45%; margin-right:5%;">
+						<label class="form-label">Tipo de operación</label>
+						<select class="form-select" id="opc-operacion" onchange="capturarSeleccion()" asp-for="Operacion">
+							<option value="=" selected>Igual</option>
+							<option value="Intervalo">Intervalo</option>
+							<option value=">" >Mayor qué (>)</option>
+							<option value="<">Menor qué (<)</option>
+							<option value=">=">Mayor o igual qué (>=)</option>
+							<option value="<=">Menor o igual qué (<=)</option>
+						</select>
+						<span class="text-danger"></span>
+					</div>
+					@*Valor de referencia único, NO intervalo*@
+					<div class="col-md-6 fw-light text-secondary mb-3" style="width:45%;" id="vr-unico" hidden>
+						<label asp-for="ValorReferencia" class="form-label">Valor de referencia</label>
+						<input asp-for="ValorReferencia" class="form-control" />
+						<span asp-validation-for="ValorReferencia" class="text-danger"></span>
+					</div>
+					@*Valor de referencia único, SÍ intervalo*@
+					<div class="row">
+					<div class="col-md-6 fw-light text-secondary mb-3" style="width:45%;" id="vr-unico-int-ini" hidden>
+						<label asp-for="ValorReferenciaInicio" class="form-label">Valor de referencia inicial</label>
+						<input asp-for="ValorReferenciaInicio" class="form-control" />
+						<span asp-validation-for="ValorReferenciaInicio" class="text-danger"></span>
+					</div>
+					<div class="col-md-6 fw-light text-secondary mb-3" style="width:45%; margin-right:5%;" id="vr-unico-int-fin" hidden>
+						<label asp-for="ValorReferenciaFin" class="form-label">Valor de referencia final</label>
+						<input asp-for="ValorReferenciaFin" class="form-control" />
+						<span asp-validation-for="ValorReferenciaFin" class="text-danger"></span>
+					</div>
+					</div>
+					@*Valor de referencia doble, NO intervalo*@
+					<div class="row">
+					<div class="col-md-6 fw-light text-secondary mb-3" style="width:45%;" id="vr-doble-m" hidden>
+						<label asp-for="ValorReferenciaMujer" class="form-label">Valor de referencia: Mujer</label>
+						<input asp-for="ValorReferenciaMujer" class="form-control" />
+						<span asp-validation-for="ValorReferenciaMujer" class="text-danger"></span>
+					</div>
+					<div class="col-md-6 fw-light text-secondary mb-3" style="width:45%; margin-right:5%;" id="vr-doble-h" hidden>
+						<label asp-for="ValorReferenciaHombre" class="form-label">Valor de referencia: Hombre</label>
+						<input asp-for="ValorReferenciaHombre" class="form-control" />
+						<span asp-validation-for="ValorReferenciaHombre" class="text-danger"></span>
+					</div>
+					</div>
+					@*Valor de referencia doble, SI intervalo*@
+					<div class="row">
+					<div class="col-md-6 fw-light text-secondary mb-3" style="width:45%;" id="vr-doble-m-int-ini" hidden>
+						<label asp-for="ValorReferenciaInicioMujer" class="form-label">Valor de referencia inicial: Mujer</label>
+						<input asp-for="ValorReferenciaInicioMujer" class="form-control" />
+						<span asp-validation-for="ValorReferenciaInicioMujer" class="text-danger"></span>
+					</div>
+					<div class="col-md-6 fw-light text-secondary mb-3" style="width:45%; margin-right:5%;" id="vr-doble-m-int-fin" hidden>
+						<label asp-for="ValorReferenciaFinMujer" class="form-label">Valor de referencia final: Mujer</label>
+						<input asp-for="ValorReferenciaFinMujer" class="form-control" />
+						<span asp-validation-for="ValorReferenciaFinMujer" class="text-danger"></span>
+					</div>
+					</div>
+					<div class="row">
+					<div class="col-md-6 fw-light text-secondary mb-3" style="width:45%;" id="vr-doble-h-int-ini" hidden>
+						<label asp-for="ValorReferenciaInicioHombre" class="form-label">Valor de referencia inicial: Hombre</label>
+						<input asp-for="ValorReferenciaInicioHombre" class="form-control" />
+						<span asp-validation-for="ValorReferenciaInicioHombre" class="text-danger"></span>
+					</div>
+					<div class="col-md-6 fw-light text-secondary mb-3" style="width:45%; margin-right:5%;" id="vr-doble-h-int-fin" hidden>
+						<label asp-for="ValorReferenciaFinHombre" class="form-label">Valor de referencia final: Hombre</label>
+						<input asp-for="ValorReferenciaFinHombre" class="form-control" />
+						<span asp-validation-for="ValorReferenciaFinHombre" class="text-danger"></span>
+					</div>
+					</div>
 				</div>
 				<div class="col-12 d-flex justify-content-end pe-4">
 					<button type="submit" class="btn btn-primary me-1 mt-1 fw-bold " style="background-color:forestgreen;">Confirmar</button>

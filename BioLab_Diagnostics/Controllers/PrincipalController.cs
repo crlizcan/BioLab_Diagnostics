@@ -62,10 +62,6 @@ namespace BioLab_Diagnostics.Controllers
 				NombrePrueba = g.First().IdPruebaNavigation.Nombre,
 				CantidadSolicitudes = g.Count()
             }).OrderByDescending(g => g.CantidadSolicitudes).Take(5).ToList();
-            //SELECT TOP 5 Nombre, COUNT(PeticionesPruebas.ID_Prueba)
-            //FROM PeticionesPruebas JOIN Pruebas on PeticionesPruebas.ID_Prueba = Pruebas.ID_Prueba
-            //GROUP BY Nombre
-            //ORDER BY COUNT(PeticionesPruebas.ID_Prueba) DESC;
             var nombresPruebasMasSolicitadas = pruebasMasSolicitadas.Select(p => p.NombrePrueba);
             var cantPruebasMasSolicitadas = pruebasMasSolicitadas.Select(p => p.CantidadSolicitudes);
 

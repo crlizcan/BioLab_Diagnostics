@@ -228,13 +228,22 @@
 		<div class="ms-auto pt-2">
 		@if (ViewData["Resultados"].Equals("No completados"))
 		{
-				<button type="submit" class="btn btn-primary me-1 mt-1 fw-bold " style="background-color:#0243a6;">Guardar</button>
-		}
-		else
-		{
-				<button asp-area="" asp-action="Index" asp-controller="CrearPDF" asp-route-idPeticion="@ViewData["idPeticion"]" class="btn btn-primary me-1 mt-1 fw-bold " style="background-color:forestgreen;">Enviar</button>
-		}
-			<a class="btn btn-primary me-1 mt-1 fw-bold " style="background-color:cornflowerblue;" asp-area="" asp-controller="Peticiones" asp-action="EditarResultados" asp-route-id="@id">Editar</a>
+				<button type="submit" class="btn btn-primary me-1 mt-1 fw-bold " style="background-color:forestgreen;">Guardar</button>
+			}
+			else
+			{
+				if (ViewData["Estado"].Equals("ENVIADO"))
+				{
+					<button asp-area="" asp-action="Index" asp-controller="CrearPDF" asp-route-idPeticion="@ViewData["idPeticion"]" class="btn btn-primary me-1 mt-1 fw-bold " style="background-color:forestgreen;" disabled>Enviar</button>
+				} else
+				{
+					<button asp-area="" asp-action="Index" asp-controller="CrearPDF" asp-route-idPeticion="@ViewData["idPeticion"]" class="btn btn-primary me-1 mt-1 fw-bold " style="background-color:forestgreen;">Enviar</button>
+				}
+			}
+			@if (!ViewData["Estado"].Equals("ENVIADO"))
+			{
+				<a class="btn btn-primary me-1 mt-1 fw-bold " style="background-color:cornflowerblue;" asp-area="" asp-controller="Peticiones" asp-action="EditarResultados" asp-route-id="@id">Editar</a>
+			}
 			<a asp-action="Index" class="btn btn-light me-2 mt-1 " style="color:#0d6efd; border:1px solid #0d6efd;">Cancelar</a>
 		</div>
 	</div>
